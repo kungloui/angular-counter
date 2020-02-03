@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+
+  myCount = 1;
+
+  changeCount(number: number) {
+    this.myCount = this.myCount + number;
+  }
 }
